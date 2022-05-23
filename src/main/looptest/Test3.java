@@ -1,4 +1,4 @@
-package main.test;
+package main.looptest;
 
 import java.util.Scanner;
 
