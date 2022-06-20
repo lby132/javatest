@@ -24,6 +24,7 @@ class Deck {
                 cardArr[i++] = new Card(k, n+1);
     }
 
+
     Card pick(int index) {  // 지정된 위치(index)에 있는 카드 하나를 꺼내서 반환
         return cardArr[index];
     }
