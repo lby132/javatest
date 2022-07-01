@@ -50,6 +50,7 @@ class Tank extends GroundUnit implements Repairable {
 class Dropship extends AirUnit implements Repairable {
     public Dropship() {
         super(125);
+        hitPoint = MAX_HP;
     }
 
     public String toString() {
@@ -73,6 +74,7 @@ class SCV extends GroundUnit implements Repairable {
     void repair(Repairable r) {
         if (r instanceof Unit1) {
             Unit1 u = (Unit1) r;
+
             while (u.hitPoint != u.MAX_HP) {
                 /* Unit의 hp를 증가시킨다. */
                 u.hitPoint++;
