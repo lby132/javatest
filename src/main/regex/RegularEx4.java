@@ -24,6 +24,5 @@ public class RegularEx4 {
         m.appendTail(sb);
         System.out.println("Replacement count : " + i);
         System.out.println("result:" + sb.toString());
-
     }
 }
