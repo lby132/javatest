@@ -39,7 +39,7 @@ public class MyVector implements List {
     }
 
     public Object get(int index) {
-        if (index > 0 || index >= size) {
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("범위를 벗어났습니다.");
         }
         return data[index];
@@ -48,7 +48,7 @@ public class MyVector implements List {
     public Object remove(int index) {
         Object oldObj = null;
 
-        if (index > 0 || index >= size)
+        if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException("범위를 벗어났습니다.");
 
         oldObj = data[index];
