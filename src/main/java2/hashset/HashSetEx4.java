@@ -1,6 +1,7 @@
 package main.java2.hashset;
 
 import java.util.HashSet;
+import java.util.Objects;
 
 public class HashSetEx4 {
     public static void main(String[] args) {
@@ -33,7 +34,8 @@ class Person2 {
     }
 
     public int hashCode() {
-        return (name + age).hashCode();
+        // return (name + age).hashCode();
+        return Objects.hash(name, age);     // 자바 1.8부터 추가된 java.util.Objects클래스의 hash()를 이용하자
     }
 
     public String toString() {
