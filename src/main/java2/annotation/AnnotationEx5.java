@@ -32,6 +32,7 @@ public class AnnotationEx5 {
     }
 }
 
+
 @Retention(RetentionPolicy.RUNTIME)   // 실행 시에 사용하도록 지정
 @interface TestInfo {
     int count() default 1;
