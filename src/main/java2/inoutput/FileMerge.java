@@ -1,4 +1,4 @@
-package main.java2;
+package main.java2.inoutput;
 
 import java.io.*;
 
