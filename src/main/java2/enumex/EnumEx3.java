@@ -20,6 +20,7 @@ enum Transportation {
     public int getBasicFare(){return BASIC_FARE;}
 
     abstract int fare(int distance);  // 거리에 따른 요금 계산
+
 }
 
 public class EnumEx3 {
